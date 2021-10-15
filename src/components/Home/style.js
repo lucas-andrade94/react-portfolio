@@ -8,6 +8,7 @@ export const HomeContainer = styled.section`
   align-items: center;
   justify-content: center;
   text-align: center;
+  padding: 0 5% 0 5%;
 `;
 
 export const Intro = styled.p`

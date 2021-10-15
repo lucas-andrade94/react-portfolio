@@ -5,7 +5,8 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export const HeaderContainer = styled.header`
   display: flex;
-  padding-left: 2rem;
+  padding-left: 5%;
+  padding-right: 5%;
   height: 60px;
   align-items: center;
   justify-content: space-between;

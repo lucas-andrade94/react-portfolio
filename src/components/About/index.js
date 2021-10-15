@@ -1,13 +1,11 @@
 import React from "react";
 
-import { Title } from "../../utils/GlobalStyle";
+import { Title, Subtitle, Description } from "../../utils/GlobalStyle";
 import {
   AboutContainer,
   Content,
   ProfileImage,
   TextContainer,
-  Subtitle,
-  Description,
   SkillsContainer,
   Skills,
 } from "./style";

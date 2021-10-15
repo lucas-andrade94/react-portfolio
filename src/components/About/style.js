@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "../../utils/colors";
 
 export const AboutContainer = styled.section`
   display: flex;
@@ -7,6 +6,7 @@ export const AboutContainer = styled.section`
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
+  padding: 0 5% 0 5%;
 `;
 
 export const Content = styled.div`
@@ -14,7 +14,6 @@ export const Content = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  width: 90%;
 `;
 
 export const ProfileImage = styled.img`
@@ -28,22 +27,7 @@ export const TextContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
-`;
-
-export const Subtitle = styled.h3`
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: ${colors.title};
-  padding: 1rem;
-`;
-
-export const Description = styled.p`
-  display: flex;
-  text-align: justify;
-  line-height: 1.5;
-  padding: 0.25rem;
-  align-items: center;
+  width: 60%;
 `;
 
 export const SkillsContainer = styled.div`
