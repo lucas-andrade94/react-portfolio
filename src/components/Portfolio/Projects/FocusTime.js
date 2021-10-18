@@ -29,7 +29,7 @@ export const FocusTime = () => {
               href="https://github.com/lucas-andrade94/react-native-focus-time"
               target="_blank"
             >
-              View Code
+              View Code and Screens
             </Button>
           </ButtonContainer>
         </ContentText>

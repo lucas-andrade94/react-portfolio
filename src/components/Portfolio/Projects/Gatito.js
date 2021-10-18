@@ -29,7 +29,7 @@ export const Gatito = () => {
               href="https://github.com/lucas-andrade94/react-native-gatito"
               target="_blank"
             >
-              View Code
+              View Code and Screens
             </Button>
           </ButtonContainer>
         </ContentText>

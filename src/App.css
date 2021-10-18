@@ -6,3 +6,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   color: #dddddd;
 }
+
+html {
+  scroll-behavior: smooth;
+}

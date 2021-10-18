@@ -8,7 +8,7 @@ import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
 
 export const Contact = () => {
   return (
-    <ContactContainer>
+    <ContactContainer id="contact">
       <Title>Contact</Title>
       <Container>
         <Subtitle>

@@ -23,7 +23,7 @@ import { SiKubernetes } from "@react-icons/all-files/si/SiKubernetes";
 
 export const About = () => {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <Title>About</Title>
       <Content>
         <ProfileImage src={Profile} alt="Profile" />

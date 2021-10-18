@@ -28,7 +28,7 @@ export const Home = () => {
   let greeting = greetingTime(nowNumber);
 
   return (
-    <HomeContainer>
+    <HomeContainer id="home">
       <Intro>GOOD {greeting}! I'M</Intro>
       <Name>LUCAS ANDRADE</Name>
       <Intro>A FRONT-END DEVELOPER</Intro>

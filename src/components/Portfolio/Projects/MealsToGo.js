@@ -35,7 +35,7 @@ export const MealsToGo = () => {
               href="https://github.com/lucas-andrade94/react-native-MealsToGo"
               target="_blank"
             >
-              View Code
+              View Code and Screens
             </Button>
           </ButtonContainer>
         </ContentText>

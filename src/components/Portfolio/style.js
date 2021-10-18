@@ -47,7 +47,7 @@ export const Button = styled.a`
   color: ${colors.text};
   text-decoration: none;
   text-align: center;
-  width: 12%;
+  width: 18%;
   &:hover {
     text-decoration: underline;
   }

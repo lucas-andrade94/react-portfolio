@@ -14,10 +14,10 @@ export const Header = () => {
   return (
     <HeaderContainer>
       <nav>
-        <HeaderLink>Home</HeaderLink>
-        <HeaderLink>About</HeaderLink>
-        <HeaderLink>Portfolio</HeaderLink>
-        <HeaderLink>Contact</HeaderLink>
+        <HeaderLink href="#home">Home</HeaderLink>
+        <HeaderLink href="#about">About</HeaderLink>
+        <HeaderLink href="#projects">Projects</HeaderLink>
+        <HeaderLink href="#contact">Contact</HeaderLink>
       </nav>
       <SocialContainer>
         <a
