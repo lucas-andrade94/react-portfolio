@@ -6,7 +6,7 @@ import {
   ButtonContainer,
   ContentImg,
   ContentText,
-  ProjectImage,
+  ProjectImageMobile,
   ProjectsContainer,
 } from "../style";
 import FocusTimeImage from "../../../assets/FocusTime.webp";
@@ -17,7 +17,7 @@ export const FocusTime = () => {
       <Subtitle>Focus Time</Subtitle>
       <ProjectsContainer>
         <ContentImg>
-          <ProjectImage src={FocusTimeImage} alt="Focus Time Screen" />
+          <ProjectImageMobile src={FocusTimeImage} alt="Focus Time Screen" />
         </ContentImg>
         <ContentText>
           <Description>

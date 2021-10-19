@@ -6,7 +6,7 @@ import {
   ButtonContainer,
   ContentImg,
   ContentText,
-  ProjectImage,
+  ProjectImageMobile,
   ProjectsContainer,
 } from "../style";
 import MealsToGoImage from "../../../assets/MealsToGo.webp";
@@ -17,7 +17,7 @@ export const MealsToGo = () => {
       <Subtitle>Meals To Go</Subtitle>
       <ProjectsContainer>
         <ContentImg>
-          <ProjectImage src={MealsToGoImage} alt="Meals To Go Screen" />
+          <ProjectImageMobile src={MealsToGoImage} alt="Meals To Go Screen" />
         </ContentImg>
         <ContentText>
           <Description>

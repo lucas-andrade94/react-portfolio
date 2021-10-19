@@ -3,7 +3,7 @@ import { colors } from "../../../utils/colors";
 
 export const DivCarousel = styled.div`
   overflow: hidden;
-  width: 100%;
+  width: 95%;
   margin: 2rem 0;
 `;
 

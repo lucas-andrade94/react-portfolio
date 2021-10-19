@@ -6,7 +6,7 @@ import {
   ButtonContainer,
   ContentImg,
   ContentText,
-  ProjectImage,
+  ProjectImageMobile,
   ProjectsContainer,
 } from "../style";
 import GatitoImage from "../../../assets/Gatito.webp";
@@ -17,7 +17,7 @@ export const Gatito = () => {
       <Subtitle>Gatito</Subtitle>
       <ProjectsContainer>
         <ContentImg>
-          <ProjectImage src={GatitoImage} alt="Gatito Screen" />
+          <ProjectImageMobile src={GatitoImage} alt="Gatito Screen" />
         </ContentImg>
         <ContentText>
           <Description>

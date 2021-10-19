@@ -83,8 +83,24 @@ export const ContentText = styled.div`
 export const ProjectImage = styled.img`
   height: 350px;
 
+  @media (min-width: 0px) and (max-width: 479px) {
+    height: 170px;
+  }
+
+  @media (min-width: 479px) and (max-width: 767px) {
+    height: 240px;
+  }
+`;
+
+export const ProjectImageMobile = styled.img`
+  height: 350px;
+
   @media (min-width: 0px) and (max-width: 767px) {
-    height: 200px;
+    height: 225px;
+  }
+
+  @media (min-width: 479px) and (max-width: 767px) {
+    height: 240px;
   }
 `;
 

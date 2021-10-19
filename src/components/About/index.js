@@ -31,18 +31,18 @@ export const About = () => {
           <Subtitle>Hello! I'm Lucas.</Subtitle>
           <Description>
             I'm a Calgary based Front-End Developer. I had worked as an engineer
-            for almost four years, and I'm now during a transition to a
-            Developer career, studying and developing new projects every day to
-            improve my skills as a developer. Although successful in my engineer
-            career, I have realized that I always had more interest in
-            programming area since my undergraduate time.
+            for almost four years, and I am now undergoing a transition to
+            Front-End Developer, studying and developing new projects every day
+            to improve my skills as a developer. Although successful in my
+            engineering career, I have realized that I always had more of an
+            interest in the programming area since my undergraduate degree.
           </Description>
           <Description>
-            I discovered my passion when I started to do some Front-End courses,
-            by myself, to learn more about HTML, CSS, and JavaScript. After that
-            I never stopped, and now I'm focused on improving my knowledge in
-            React and React Native, to boost my projects exploring new
-            technologies.
+            I discovered my passion of programming when I started to do some
+            Front-End courses months ago to learn more about HTML, CSS, and
+            JavaScript. After that I never stopped, and now I am focused on
+            improving my knowledge in React and React Native, to boost my
+            projects exploring new technologies.
           </Description>
           <Subtitle>Why hire me?</Subtitle>
           <Description>
