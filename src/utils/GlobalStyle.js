@@ -15,6 +15,10 @@ export const Title = styled.h2`
   color: ${colors.title};
   font-weight: bold;
   padding: 4rem 0 2rem 0;
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    padding: 3rem 0 1rem 0;
+  }
 `;
 
 export const Subtitle = styled.h3`

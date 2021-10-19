@@ -19,6 +19,24 @@ export const DivItem = styled.div`
   height: 400px;
   width: 90%;
   flex-direction: column;
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    height: 600px;
+    width: 100%;
+    white-space: pre-line;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 750px;
+    width: 100%;
+    white-space: pre-line;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1750px) {
+    height: 750px;
+    width: 100%;
+    white-space: pre-line;
+  }
 `;
 
 export const Indicators = styled.div`
@@ -42,5 +60,13 @@ export const NormalButton = styled.a`
   &:hover {
     text-decoration: underline;
     cursor: pointer;
+  }
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    margin: 1rem 0.5rem;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin: 1rem 0.5rem;
   }
 `;

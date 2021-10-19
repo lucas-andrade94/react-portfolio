@@ -9,6 +9,14 @@ export const HomeContainer = styled.section`
   justify-content: center;
   text-align: center;
   padding: 0 5% 0 5%;
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    height: 100vh;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    height: 100vh;
+  }
 `;
 
 export const Intro = styled.p`

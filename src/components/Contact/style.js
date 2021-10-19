@@ -11,10 +11,15 @@ export const ContactContainer = styled.section`
 
 export const Container = styled.div`
   display: flex;
-  flex: row;
+  flex-direction: row;
   justify-content: space-around;
   width: 60%;
   padding: 2rem 0 4rem 0;
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const Link = styled.a`

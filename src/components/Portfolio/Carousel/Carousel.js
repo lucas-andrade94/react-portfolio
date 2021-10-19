@@ -63,7 +63,7 @@ export const Carousel = ({ children }) => {
             updateIndex(activeIndex - 1);
           }}
         >
-          Prev
+          {"<"}
         </NormalButton>
         {Children.map(children, (child, index) => {
           return (
@@ -82,7 +82,7 @@ export const Carousel = ({ children }) => {
             updateIndex(activeIndex + 1);
           }}
         >
-          Next
+          {">"}
         </NormalButton>
       </Indicators>
     </DivCarousel>

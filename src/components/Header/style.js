@@ -18,6 +18,14 @@ export const HeaderContainer = styled.header`
   align-items: center;
   justify-content: space-between;
   background-color: ${colors.bg};
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 1rem;
+    height: 2rem;
+  }
 `;
 
 export const HeaderLink = styled.a`
@@ -30,6 +38,14 @@ export const HeaderLink = styled.a`
     text-decoration: underline;
     cursor: pointer;
   }
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    font-size: 1.125rem;
+    padding: 0 0.5rem;
+    &:hover {
+      font-size: 1.25rem;
+    }
+  }
 `;
 
 export const SocialContainer = styled.div`
@@ -37,6 +53,10 @@ export const SocialContainer = styled.div`
   justify-content: flex-end;
   padding-right: 3rem;
   align-items: center;
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    display: none;
+  }
 `;
 
 export const LinkedIn = styled(LinkedInIcon)`
