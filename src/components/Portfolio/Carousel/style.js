@@ -9,7 +9,7 @@ export const DivCarousel = styled.div`
 
 export const DivInner = styled.div`
   white-space: nowrap;
-  transition: transform 0.3s;
+  transition: transform 1s;
 `;
 
 export const DivItem = styled.div`

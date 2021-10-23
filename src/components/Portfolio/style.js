@@ -58,7 +58,7 @@ export const ContentImg = styled.div`
 export const ContentText = styled.div`
   display: flex;
   flex-direction: column;
-  width: 60%;
+  width: 1000px;
   padding-right: 5%;
 
   @media (min-width: 0px) and (max-width: 767px) {
@@ -81,7 +81,11 @@ export const ContentText = styled.div`
 `;
 
 export const ProjectImage = styled.img`
-  height: 350px;
+  height: 300px;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
 
   @media (min-width: 0px) and (max-width: 479px) {
     height: 170px;
@@ -93,7 +97,11 @@ export const ProjectImage = styled.img`
 `;
 
 export const ProjectImageMobile = styled.img`
-  height: 350px;
+  height: 300px;
+  &:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
 
   @media (min-width: 0px) and (max-width: 767px) {
     height: 225px;
