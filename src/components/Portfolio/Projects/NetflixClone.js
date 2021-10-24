@@ -36,7 +36,7 @@ export const NetflixClone = () => {
               View Code
             </Button>
             <Button
-              href="https://netflix-website-clone.herokuapp.com/"
+              href="https://netflix-clone-lucas-andrade.netlify.app/"
               target="_blank"
             >
               View Project

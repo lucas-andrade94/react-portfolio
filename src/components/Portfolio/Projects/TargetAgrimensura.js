@@ -39,7 +39,7 @@ export const TargetAgrimensura = () => {
               View Code
             </Button>
             <Button
-              href="https://target-agrimensura.herokuapp.com/"
+              href="https://target-agrimensura.netlify.app/"
               target="_blank"
             >
               View Project
