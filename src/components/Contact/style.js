@@ -1,12 +1,13 @@
 import styled from "styled-components";
 import { colors } from "../../utils/colors";
+import { sizes } from "../../utils/sizes";
 
 export const ContactContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 5% 0 5%;
+  width: ${sizes.container};
 `;
 
 export const Container = styled.div`

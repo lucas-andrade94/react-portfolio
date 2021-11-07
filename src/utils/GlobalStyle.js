@@ -14,10 +14,10 @@ export const Title = styled.h2`
   font-size: 2.5rem;
   color: ${colors.title};
   font-weight: bold;
-  padding: 4rem 0 2rem 0;
+  padding: 2rem 0 0 0;
 
-  @media (min-width: 0px) and (max-width: 767px) {
-    padding: 3rem 0 1rem 0;
+  @media (min-width: 0px) and (max-width: 1023px) {
+    padding: 4rem 0 1rem 0;
   }
 `;
 
@@ -25,12 +25,11 @@ export const Subtitle = styled.h3`
   font-size: 1.5rem;
   font-weight: bold;
   color: ${colors.title};
-  padding: 1rem;
+  padding: 1rem 0 1rem 0;
 `;
 
 export const Description = styled.p`
   display: flex;
-  text-align: justify;
   line-height: 1.5;
   padding: 0.25rem;
   align-items: center;

@@ -3,43 +3,41 @@ import React from "react";
 import { Description, Subtitle } from "../../../utils/GlobalStyle";
 import {
   Button,
-  ButtonContainer,
+  ButtonContainerMobile,
   ContentImg,
   ContentText,
   ProjectImageMobile,
-  ProjectsContainer,
+  ProjectsContainerMobile,
 } from "../style";
-import MealsToGoImage from "../../../assets/MealsToGo.webp";
+import MealsToGoImage from "../../../assets/MealsToGo.gif";
 
 export const MealsToGo = () => {
   return (
     <>
       <Subtitle>Meals To Go</Subtitle>
-      <ProjectsContainer>
+      <ProjectsContainerMobile>
         <ContentImg>
           <ProjectImageMobile src={MealsToGoImage} alt="Meals To Go Screen" />
         </ContentImg>
         <ContentText>
           <Description>
-            • Meals To Go is an app for Android and iOS, developed using React
-            Native and Expo to simulate a delivery app such as Uber Eats.
+            &#x27A4;&nbsp; Meals To Go simulate a Food Delivery app for Android
+            and iOS.
           </Description>
           <Description>
-            • To apply style to components was used Styled Components.
+            &#x27A4;&nbsp; Stacks used: React Native, Expo, Styled Components
+            and Firebase.
           </Description>
-          <Description>
-            • To manage registration and login was used Firebase.
-          </Description>
-          <ButtonContainer>
+          <ButtonContainerMobile>
             <Button
               href="https://github.com/lucas-andrade94/react-native-MealsToGo"
               target="_blank"
             >
               View Code and Screens
             </Button>
-          </ButtonContainer>
+          </ButtonContainerMobile>
         </ContentText>
-      </ProjectsContainer>
+      </ProjectsContainerMobile>
     </>
   );
 };

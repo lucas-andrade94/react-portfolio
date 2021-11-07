@@ -1,23 +1,19 @@
 import styled from "styled-components";
 import { colors } from "../../utils/colors";
-
-import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import { sizes } from "../../utils/sizes";
 
 export const HeaderContainer = styled.header`
   position: fixed;
   z-index: 999;
   top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   flex-direction: row;
-  padding-left: 5%;
-  padding-right: 5%;
   height: 60px;
+  width: ${sizes.container};
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   background-color: ${colors.bg};
+  align-items: center;
 
   @media (min-width: 0px) and (max-width: 767px) {
     flex-direction: column;
@@ -25,6 +21,7 @@ export const HeaderContainer = styled.header`
     padding-right: 0;
     padding-top: 1rem;
     height: 2rem;
+    width: 320px;
   }
 `;
 
@@ -46,23 +43,4 @@ export const HeaderLink = styled.a`
       font-size: 1.25rem;
     }
   }
-`;
-
-export const SocialContainer = styled.div`
-  display: flex;
-  justify-content: flex-end;
-  padding-right: 3rem;
-  align-items: center;
-
-  @media (min-width: 0px) and (max-width: 767px) {
-    display: none;
-  }
-`;
-
-export const LinkedIn = styled(LinkedInIcon)`
-  margin-left: 2rem;
-`;
-
-export const Email = styled(EmailOutlinedIcon)`
-  margin-left: 2rem;
 `;

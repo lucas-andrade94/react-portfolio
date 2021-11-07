@@ -41,7 +41,7 @@ git clone https://github.com/lucas-andrade94/react-portfolio.git
 cd react-portfolio
 
 # Install dependencies
-npm install
+npm install --legacy-peer-deps
 
 # Run
 npm start

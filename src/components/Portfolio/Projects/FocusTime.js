@@ -3,37 +3,39 @@ import React from "react";
 import { Description, Subtitle } from "../../../utils/GlobalStyle";
 import {
   Button,
-  ButtonContainer,
+  ButtonContainerMobile,
   ContentImg,
   ContentText,
   ProjectImageMobile,
-  ProjectsContainer,
+  ProjectsContainerMobile,
 } from "../style";
-import FocusTimeImage from "../../../assets/FocusTime.webp";
+import FocusTimeImage from "../../../assets/FocusTime.gif";
 
 export const FocusTime = () => {
   return (
     <>
       <Subtitle>Focus Time</Subtitle>
-      <ProjectsContainer>
+      <ProjectsContainerMobile>
         <ContentImg>
           <ProjectImageMobile src={FocusTimeImage} alt="Focus Time Screen" />
         </ContentImg>
         <ContentText>
           <Description>
-            • Focus Time is an app for Android and iOS, developed using React
-            Native and Expo to be a Pomodoro application.
+            &#x27A4;&nbsp; Focus Time is a Pomodoro app for Android and iOS.
           </Description>
-          <ButtonContainer>
+          <Description>
+            &#x27A4;&nbsp; Stacks used: React Native and Expo.
+          </Description>
+          <ButtonContainerMobile>
             <Button
               href="https://github.com/lucas-andrade94/react-native-focus-time"
               target="_blank"
             >
               View Code and Screens
             </Button>
-          </ButtonContainer>
+          </ButtonContainerMobile>
         </ContentText>
-      </ProjectsContainer>
+      </ProjectsContainerMobile>
     </>
   );
 };

@@ -1,10 +1,11 @@
 import styled from "styled-components";
 import { colors } from "../../../utils/colors";
+import { sizes } from "../../../utils/sizes";
 
 export const DivCarousel = styled.div`
   overflow: hidden;
-  width: 95%;
-  margin: 2rem 0;
+  width: ${sizes.container};
+  margin: 0 0 2rem 0;
 `;
 
 export const DivInner = styled.div`
@@ -16,12 +17,11 @@ export const DivItem = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 400px;
-  width: 90%;
+  height: 700px;
+  width: 100%;
   flex-direction: column;
 
   @media (min-width: 0px) and (max-width: 767px) {
-    height: 600px;
     width: 100%;
     white-space: pre-line;
   }

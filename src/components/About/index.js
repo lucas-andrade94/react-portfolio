@@ -8,6 +8,7 @@ import {
   TextContainer,
   SkillsContainer,
   Skills,
+  ButtonCV,
 } from "./style";
 import Profile from "../../assets/Profile_Image.webp";
 import { FaReact } from "@react-icons/all-files/fa/FaReact";
@@ -30,19 +31,16 @@ export const About = () => {
         <TextContainer>
           <Subtitle>Hello! I'm Lucas.</Subtitle>
           <Description>
-            I'm a Calgary based Front-End Developer. I had worked as an engineer
-            for almost four years, and I am now undergoing a transition to
-            Front-End Developer, studying and developing new projects every day
-            to improve my skills as a developer. Although successful in my
-            engineering career, I have realized that I always had more of an
-            interest in the programming area since my undergraduate degree.
+            I am a Calgary based Front-End Developer. I had worked as an
+            engineer for almost four years, and during my career I developed a
+            strong organization, team work, time management, and problem
+            solving.
           </Description>
           <Description>
             I discovered my passion of programming when I started to do some
-            Front-End courses months ago to learn more about HTML, CSS, and
-            JavaScript. After that I never stopped, and now I am focused on
-            improving my knowledge in React and React Native, to boost my
-            projects exploring new technologies.
+            Front-End courses about HTML, CSS, and JavaScript. After that I
+            never stopped, and now I am focused on improving my knowledge in
+            React, to boost my projects exploring new technologies.
           </Description>
           <Subtitle>Why hire me?</Subtitle>
           <Description>
@@ -86,7 +84,7 @@ export const About = () => {
               </Description>
               <Description>
                 <SiGraphql color={"#e535ab"} />
-                &nbsp;Graphql
+                &nbsp;GraphQL
               </Description>
               <Description>
                 <SiKubernetes color={"#3970e4"} />
@@ -99,16 +97,23 @@ export const About = () => {
           </Description>
           <SkillsContainer>
             <Skills>
-              <Description>• Self Learning</Description>
-              <Description>• Problem Solving</Description>
-              <Description>• Organization</Description>
+              <Description>&#x27A4;&nbsp; Self Learning</Description>
+              <Description>&#x27A4;&nbsp; Problem Solving</Description>
+              <Description>&#x27A4;&nbsp; Organization</Description>
             </Skills>
             <Skills>
-              <Description>• Time Management</Description>
-              <Description>• Teamwork</Description>
-              <Description>• Leadership</Description>
+              <Description>&#x27A4;&nbsp; Time Management</Description>
+              <Description>&#x27A4;&nbsp; Teamwork</Description>
+              <Description>&#x27A4;&nbsp; Leadership</Description>
             </Skills>
           </SkillsContainer>
+          <ButtonCV
+            href="https://drive.google.com/file/d/1ppSTvGuXBSG6AS8-NDX0_WiWTefrpyPW/view?usp=sharing"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Download Resume
+          </ButtonCV>
         </TextContainer>
       </Content>
     </AboutContainer>

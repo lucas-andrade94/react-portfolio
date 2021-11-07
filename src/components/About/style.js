@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { sizes } from "../../utils/sizes";
+import { colors } from "../../utils/colors";
 
 export const AboutContainer = styled.section`
   display: flex;
@@ -6,7 +8,23 @@ export const AboutContainer = styled.section`
   align-items: center;
   justify-content: center;
   padding-bottom: 1rem;
-  padding: 0 5% 0 5%;
+  width: ${sizes.container};
+
+  @media (min-width: 0px) and (max-width: 419px) {
+    width: 320px;
+  }
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    width: 420px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1279px) {
+    width: 1024px;
+  }
 `;
 
 export const Content = styled.div`
@@ -83,4 +101,27 @@ export const SkillsContainer = styled.div`
 export const Skills = styled.div`
   display: flex:
   flex-direction: column;
+`;
+
+export const ButtonCV = styled.a`
+  margin: 2rem 2rem;
+  padding: 1rem 2rem;
+  border: 0.2rem solid;
+  color: ${colors.text};
+  text-decoration: none;
+  text-align: center;
+  width: 160px;
+  &:hover {
+    text-decoration: underline;
+    opacity: 0.7;
+    transition: ease-in-out 0.3s;
+  }
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    margin: 1rem 0;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    margin: 1rem 0;
+  }
 `;

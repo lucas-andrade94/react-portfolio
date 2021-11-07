@@ -10,7 +10,7 @@ import {
   ProjectsContainer,
   Link,
 } from "../style";
-import NetflixCloneImage from "../../../assets/NetflixClone.webp";
+import NetflixCloneImage from "../../../assets/NetflixClone.gif";
 
 export const NetflixClone = () => {
   return (
@@ -22,11 +22,10 @@ export const NetflixClone = () => {
         </ContentImg>
         <ContentText>
           <Description>
-            • That website was developed using React, HTML5 and CSS3 during a
-            React class.
+            &#x27A4;&nbsp; It is a Netflix Website's clone.
           </Description>
           <Description>
-            • Data provided by API from <Link href="https://www.themoviedb.org/">&nbsp;The Movie DB</Link>.
+            &#x27A4;&nbsp; Stacks used: React, CSS and API from The Movie DB.
           </Description>
           <ButtonContainer>
             <Button

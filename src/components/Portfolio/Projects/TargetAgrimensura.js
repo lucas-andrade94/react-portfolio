@@ -9,7 +9,7 @@ import {
   ProjectImage,
   ProjectsContainer,
 } from "../style";
-import TargetAgrimensuraImage from "../../../assets/TargetAgrimensura.webp";
+import TargetAgrimensuraImage from "../../../assets/TargetAgrimensura.gif";
 
 export const TargetAgrimensura = () => {
   return (
@@ -24,12 +24,10 @@ export const TargetAgrimensura = () => {
         </ContentImg>
         <ContentText>
           <Description>
-            • That website was developed using React, HTML5 and CSS3 to a
-            brazilian Land Surveying company.
+            &#x27A4;&nbsp; It is a website developed for a Brazilian Land Surveying company.
           </Description>
           <Description>
-            • Contact formulary made using Material-UI library and API from
-            EmailJS to send information by e-mail to the company.
+            &#x27A4;&nbsp; Stacks used: React, CSS, Material-UI and API from EmailJS.
           </Description>
           <ButtonContainer>
             <Button
