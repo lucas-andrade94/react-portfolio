@@ -14,7 +14,6 @@ import {
 const moment = require("moment");
 
 const greetingTime = (timeNow) => {
-  console.log(timeNow);
   if (timeNow >= 5 && timeNow < 12) {
     return "MORNING";
   }
@@ -36,7 +35,6 @@ export const Home = () => {
   let now = moment().format("HH");
   let nowNumber = parseInt(now);
   let greeting = greetingTime(nowNumber);
-  console.log(greeting);
 
   return (
     <HomeContainer id="home">

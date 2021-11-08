@@ -33,11 +33,11 @@ export const About = () => {
           <Description>
             I am a Calgary based Front-End Developer. I had worked as an
             engineer for almost four years, and during my career I developed a
-            strong organization, team work, time management, and problem
-            solving.
+            variety of skills like strong organization, team work, time
+            management, and problem solving.
           </Description>
           <Description>
-            I discovered my passion of programming when I started to do some
+            I discovered my passion for programming when I started to do some
             Front-End courses about HTML, CSS, and JavaScript. After that I
             never stopped, and now I am focused on improving my knowledge in
             React, to boost my projects exploring new technologies.

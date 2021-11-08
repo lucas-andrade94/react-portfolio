@@ -8,7 +8,6 @@ import {
   ContentText,
   ProjectImage,
   ProjectsContainer,
-  Link,
 } from "../style";
 import NetflixCloneImage from "../../../assets/NetflixClone.gif";
 
