@@ -21,7 +21,7 @@ export const HeaderContainer = styled.header`
     padding-right: 0;
     padding-top: 1rem;
     height: 2rem;
-    width: 100%;
+    width: 320px;
   }
 `;
 

@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
 
 header,
-section,
+body,
 footer {
   font-family: "Montserrat", sans-serif;
   color: #dddddd;
 }
 
-section {
+body {
   display: flex;
   justify-content: center;
   align-items: center;

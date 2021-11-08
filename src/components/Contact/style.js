@@ -8,6 +8,14 @@ export const ContactContainer = styled.section`
   align-items: center;
   justify-content: center;
   width: ${sizes.container};
+
+  @media (min-width: 0px) and (max-width: 767px) {
+    width: 320px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 768px;
+  }
 `;
 
 export const Container = styled.div`

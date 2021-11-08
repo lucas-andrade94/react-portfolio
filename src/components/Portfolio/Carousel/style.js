@@ -6,6 +6,26 @@ export const DivCarousel = styled.div`
   overflow: hidden;
   width: ${sizes.container};
   margin: 0 0 2rem 0;
+
+  @media (min-width: 0px) and (max-width: 419px) {
+    width: 320px;
+  }
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    width: 420px;
+  }
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    width: 768px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1289px) {
+    width: 1024px;
+  }
+
+  @media (min-width: 1290px) {
+    width: 1290px;
+  }
 `;
 
 export const DivInner = styled.div`
@@ -32,7 +52,7 @@ export const DivItem = styled.div`
     white-space: pre-line;
   }
 
-  @media (min-width: 1024px) and (max-width: 1750px) {
+  @media (min-width: 1024px) and (max-width: 1289px) {
     height: 750px;
     width: 100%;
     white-space: pre-line;
