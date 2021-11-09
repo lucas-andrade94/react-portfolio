@@ -18,11 +18,11 @@ const greetingTime = (timeNow) => {
     return "MORNING";
   }
 
-  if (timeNow < 17) {
+  if (timeNow >= 12 && timeNow < 17) {
     return "AFTERNOON";
   }
 
-  if (timeNow < 19) {
+  if (timeNow >= 17 && timeNow < 19) {
     return "EVENING";
   }
 
