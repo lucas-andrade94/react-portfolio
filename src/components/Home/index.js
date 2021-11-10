@@ -43,7 +43,7 @@ export const Home = () => {
       <Intro>
         A{" "}
         <Typed
-          strings={["FRONT-END", "JAVASCRIPT", "REACT", "NODE"]}
+          strings={["SOFTWARE", "FRONT-END", "JAVASCRIPT", "REACT", "NODE", "RUBY"]}
           typeSpeed={75}
           backSpeed={50}
           loop
