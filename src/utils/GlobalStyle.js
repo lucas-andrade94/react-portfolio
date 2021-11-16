@@ -15,6 +15,7 @@ export const Title = styled.h2`
   color: ${colors.title};
   font-weight: bold;
   padding: 2rem 0 0 0;
+  margin-top: 1.5rem;
 
   @media (min-width: 0px) and (max-width: 1023px) {
     padding: 4rem 0 1rem 0;
