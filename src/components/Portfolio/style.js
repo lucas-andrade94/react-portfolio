@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import { colors } from "../../utils/colors";
 import { sizes } from "../../utils/sizes";
-import { Description } from "../../utils/GlobalStyle";
+import { Description, Subtitle } from "../../utils/GlobalStyle";
 
 export const PortfolioContainer = styled.section`
   display: flex;
@@ -90,6 +90,12 @@ export const ProjectsContainerMobile = styled.div`
     height: 100%;
     width: 1024px;
   }
+`;
+
+export const ProjectsTitle = styled(Subtitle)`
+  padding: 2rem 0 0 0;
+  margin-bottom: -1rem;
+  font-size: 1.75rem;
 `;
 
 export const ContentImg = styled.div`

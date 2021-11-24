@@ -8,12 +8,13 @@ import { Gatito } from "./Projects/Gatito";
 import { MealsToGo } from "./Projects/MealsToGo";
 import { NetflixClone } from "./Projects/NetflixClone";
 import { TargetAgrimensura } from "./Projects/TargetAgrimensura";
-import { PortfolioContainer } from "./style";
+import { PortfolioContainer, ProjectsTitle } from "./style";
 
 export const Portfolio = () => {
   return (
     <PortfolioContainer id="projects">
       <Title>Projects</Title>
+      <ProjectsTitle>Web Applications</ProjectsTitle>
       <Carousel>
         <CarouselItem>
           <TargetAgrimensura />
@@ -25,6 +26,7 @@ export const Portfolio = () => {
           <NetflixClone />
         </CarouselItem>
       </Carousel>
+      <ProjectsTitle>Mobile Applications</ProjectsTitle>
       <Carousel>
         <CarouselItem>
           <MealsToGo />
