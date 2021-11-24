@@ -96,6 +96,10 @@ export const ProjectsTitle = styled(Subtitle)`
   padding: 2rem 0 0 0;
   margin-bottom: -1rem;
   font-size: 1.75rem;
+
+  @media (max-width: 1279px) {
+    margin-bottom: 1rem;
+  }
 `;
 
 export const ContentImg = styled.div`
