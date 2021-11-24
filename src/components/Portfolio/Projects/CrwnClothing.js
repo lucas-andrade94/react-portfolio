@@ -10,37 +10,33 @@ import {
   ProjectsContainer,
   DescriptionProject,
 } from "../style";
-import TargetAgrimensuraImage from "../../../assets/TargetAgrimensura.gif";
+import CrownClothingImage from "../../../assets/CrwnClothing.gif";
 
-export const TargetAgrimensura = () => {
+export const CrwnClothing = () => {
   return (
     <>
-      <Subtitle>Target Agrimensura</Subtitle>
+      <Subtitle>CRWN Clothing</Subtitle>
       <ProjectsContainer>
         <ContentImg>
-          <ProjectImage
-            src={TargetAgrimensuraImage}
-            alt="Target Agrimensura Screen"
-          />
+          <ProjectImage src={CrownClothingImage} alt="CRWN Clothing Screen" />
         </ContentImg>
         <ContentText>
           <DescriptionProject>
-            &#x27A4;&nbsp; It is a website developed for a Brazilian Land
-            Surveying company.
+            &#x27A4;&nbsp; It is a simulation of clothing e-commerce.
           </DescriptionProject>
           <DescriptionProject>
-            &#x27A4;&nbsp; Stacks used: React, CSS, Material-UI and API from
-            EmailJS.
+            &#x27A4;&nbsp; Stacks used: React, Redux, Styled-components,
+            Firebase and Stripe.
           </DescriptionProject>
           <ButtonContainer>
             <Button
-              href="https://github.com/lucas-andrade94/Target-Agrimensura-Website"
+              href="https://github.com/lucas-andrade94/react-ecommerce"
               target="_blank"
             >
               View Code
             </Button>
             <Button
-              href="https://target-agrimensura.netlify.app/"
+              href="https://react-ecommerce-seven.vercel.app/"
               target="_blank"
             >
               View Project

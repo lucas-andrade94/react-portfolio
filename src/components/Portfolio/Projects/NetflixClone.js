@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Description, Subtitle } from "../../../utils/GlobalStyle";
+import { Subtitle } from "../../../utils/GlobalStyle";
 import {
   Button,
   ButtonContainer,
@@ -8,6 +8,7 @@ import {
   ContentText,
   ProjectImage,
   ProjectsContainer,
+  DescriptionProject,
 } from "../style";
 import NetflixCloneImage from "../../../assets/NetflixClone.gif";
 
@@ -20,12 +21,12 @@ export const NetflixClone = () => {
           <ProjectImage src={NetflixCloneImage} alt="Netflix Clone Screen" />
         </ContentImg>
         <ContentText>
-          <Description>
+          <DescriptionProject>
             &#x27A4;&nbsp; It is a Netflix Website's clone.
-          </Description>
-          <Description>
+          </DescriptionProject>
+          <DescriptionProject>
             &#x27A4;&nbsp; Stacks used: React, CSS and API from The Movie DB.
-          </Description>
+          </DescriptionProject>
           <ButtonContainer>
             <Button
               href="https://github.com/lucas-andrade94/Netflix-WebsiteClone"

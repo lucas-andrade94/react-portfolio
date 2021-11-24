@@ -2,6 +2,7 @@ import React from "react";
 
 import { Title } from "../../utils/GlobalStyle";
 import { Carousel, CarouselItem } from "./Carousel/Carousel";
+import { CrwnClothing } from "./Projects/CrwnClothing";
 import { FocusTime } from "./Projects/FocusTime";
 import { Gatito } from "./Projects/Gatito";
 import { MealsToGo } from "./Projects/MealsToGo";
@@ -16,6 +17,9 @@ export const Portfolio = () => {
       <Carousel>
         <CarouselItem>
           <TargetAgrimensura />
+        </CarouselItem>
+        <CarouselItem>
+          <CrwnClothing />
         </CarouselItem>
         <CarouselItem>
           <NetflixClone />

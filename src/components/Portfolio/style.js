@@ -1,6 +1,8 @@
 import styled from "styled-components";
+
 import { colors } from "../../utils/colors";
 import { sizes } from "../../utils/sizes";
+import { Description } from "../../utils/GlobalStyle";
 
 export const PortfolioContainer = styled.section`
   display: flex;
@@ -124,6 +126,14 @@ export const ContentText = styled.div`
   @media (min-width: 1024px) and (max-width: 1279px) {
     width: 1024px;
     justify-content: center;
+  }
+`;
+
+export const DescriptionProject = styled(Description)`
+  justify-content: center;
+
+  @media (min-width: 420px) and (max-width: 767px) {
+    justify-content: flex-start;
   }
 `;
 
