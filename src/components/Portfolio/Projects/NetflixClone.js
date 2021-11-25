@@ -22,7 +22,7 @@ export const NetflixClone = () => {
         </ContentImg>
         <ContentText>
           <DescriptionProject>
-            &#x27A4;&nbsp; It is a Netflix Website's clone.
+            &#x27A4;&nbsp; Simulates the Netflix Website using a movie database.
           </DescriptionProject>
           <DescriptionProject>
             &#x27A4;&nbsp; Stacks used: React, CSS and API from The Movie DB.

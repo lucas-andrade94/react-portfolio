@@ -25,8 +25,8 @@ export const TargetAgrimensura = () => {
         </ContentImg>
         <ContentText>
           <DescriptionProject>
-            &#x27A4;&nbsp; It is a website developed for a Brazilian Land
-            Surveying company.
+            &#x27A4;&nbsp; Website developed for a Brazilian Land Surveying
+            company.
           </DescriptionProject>
           <DescriptionProject>
             &#x27A4;&nbsp; Stacks used: React, CSS, Material-UI and API from

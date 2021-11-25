@@ -14,7 +14,7 @@ export const Portfolio = () => {
   return (
     <PortfolioContainer id="projects">
       <Title>Projects</Title>
-      <ProjectsTitle>Web Applications</ProjectsTitle>
+      <ProjectsTitle>Websites</ProjectsTitle>
       <Carousel>
         <CarouselItem>
           <TargetAgrimensura />

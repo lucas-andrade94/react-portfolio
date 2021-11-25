@@ -22,7 +22,7 @@ export const CrwnClothing = () => {
         </ContentImg>
         <ContentText>
           <DescriptionProject>
-            &#x27A4;&nbsp; It is a simulation of clothing e-commerce.
+            &#x27A4;&nbsp; Clothing e-commerce website.
           </DescriptionProject>
           <DescriptionProject>
             &#x27A4;&nbsp; Stacks used: React, Redux, Styled-components,
