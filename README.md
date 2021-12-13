@@ -19,7 +19,7 @@
 Project developed using the following technologies:
 
 - [React](https://reactjs.org/)
-- [Styled Components](https://styled-components.com/)
+- [Bootstrap](https://getbootstrap.com/)
 
 
 ## 💻 Project
