@@ -1,15 +1,10 @@
 import React from "react";
 import Typed from "react-typed";
 
-import {
-  HomeContainer,
-  Intro,
-  Name,
-  SocialContainer,
-  GitHub,
-  LinkedIn,
-  Email,
-} from "./style";
+import "./style.css";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import EmailOutlinedIcon from "@mui/icons-material/EmailOutlined";
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 const moment = require("moment");
 
@@ -37,42 +32,60 @@ export const Home = () => {
   let greeting = greetingTime(nowNumber);
 
   return (
-    <HomeContainer id="home">
-      <Intro>GOOD {greeting}! I'M</Intro>
-      <Name>LUCAS ANDRADE</Name>
-      <Intro>
-        A{" "}
-        <Typed
-          strings={["SOFTWARE", "FRONT-END", "JAVASCRIPT", "REACT", "NODE"]}
-          typeSpeed={75}
-          backSpeed={50}
-          loop
-        />{" "}
-        DEVELOPER
-      </Intro>
-      <SocialContainer>
-        <a
-          href="https://github.com/lucas-andrade94"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <GitHub sx={{ color: "#dddddd", fontSize: "2.50rem" }} />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/lucas-silva-de-andrade/"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <LinkedIn sx={{ color: "#dddddd", fontSize: "3rem" }} />
-        </a>
-        <a
-          href="mailto:andradelucas94@gmail.com"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <Email sx={{ color: "#dddddd", fontSize: "3.25rem" }} />
-        </a>
-      </SocialContainer>
-    </HomeContainer>
+    <section id="home" className="bg-dark text-light">
+      <div className="container home-container">
+        <div>
+          <div className="phrases-container">
+            <span className="content">GOOD {greeting}! I'M</span>
+            <span className="text-warning name">LUCAS ANDRADE</span>
+            <span className="content">
+              A{" "}
+              <Typed
+                strings={[
+                  "SOFTWARE",
+                  "FRONT-END",
+                  "JAVASCRIPT",
+                  "REACT",
+                  "NODE",
+                ]}
+                typeSpeed={75}
+                backSpeed={50}
+                loop
+              />{" "}
+              DEVELOPER
+            </span>
+          </div>
+          <div className="icones-container">
+            <a
+              href="https://github.com/lucas-andrade94"
+              target="_blank"
+              rel="noreferrer"
+              className="icones"
+            >
+              <GitHubIcon className="text-light" sx={{ fontSize: "2.50rem" }} />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/lucas-silva-de-andrade/"
+              target="_blank"
+              rel="noreferrer"
+              className="icones"
+            >
+              <LinkedInIcon className="text-light" sx={{ fontSize: "3rem" }} />
+            </a>
+            <a
+              href="mailto:andradelucas94@gmail.com"
+              target="_blank"
+              rel="noreferrer"
+              className="icones"
+            >
+              <EmailOutlinedIcon
+                className="text-light"
+                sx={{ fontSize: "3.25rem" }}
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };

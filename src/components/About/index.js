@@ -1,15 +1,6 @@
 import React from "react";
 
-import { Title, Subtitle, Description } from "../../utils/GlobalStyle";
-import {
-  AboutContainer,
-  Content,
-  ProfileImage,
-  TextContainer,
-  SkillsContainer,
-  Skills,
-  ButtonCV,
-} from "./style";
+import "./style.css";
 import Profile from "../../assets/Profile_Image.webp";
 import { FaReact } from "@react-icons/all-files/fa/FaReact";
 import { SiJavascript } from "@react-icons/all-files/si/SiJavascript";
@@ -24,98 +15,103 @@ import { SiKubernetes } from "@react-icons/all-files/si/SiKubernetes";
 
 export const About = () => {
   return (
-    <AboutContainer id="about">
-      <Title>About</Title>
-      <Content>
-        <ProfileImage src={Profile} alt="Profile" />
-        <TextContainer>
-          <Subtitle>Hello! I'm Lucas.</Subtitle>
-          <Description>
-            I am a Calgary-based Front-End Developer. I had worked as an
-            engineer for almost four years. During my career, I developed
-            various skills like strong organization, teamwork, time management,
-            and problem-solving.
-          </Description>
-          <Description>
-            I discovered my passion for programming when I started to do some
-            Front-End courses about HTML, CSS, and JavaScript. After that, I
-            never stopped. Now I am focused on improving my knowledge in React
-            to boost my projects exploring new technologies.
-          </Description>
-          <Subtitle>Why hire me?</Subtitle>
-          <Description>
-            I'm able to work with the following technologies:
-          </Description>
-          <SkillsContainer>
-            <Skills>
-              <Description>
-                <SiJavascript color={"#f0db4f"} />
-                &nbsp;JavaScript
-              </Description>
-              <Description>
-                <FaReact color={"#61dbfb"} />
-                &nbsp;React and React Native
-              </Description>
-              <Description>
-                <FaNodeJs color={"#68a063"} />
-                &nbsp;NodeJs
-              </Description>
-              <Description>
-                <SiGithub color={"white"} />
-                &nbsp;GitHub
-              </Description>
-              <Description>
-                <FaDocker color={"#0db7ed"} />
-                &nbsp;Docker
-              </Description>
-            </Skills>
-            <Skills>
-              <Description>
-                <SiHtml5 color={"#e34c26"} />
-                &nbsp;HTML5
-              </Description>
-              <Description>
-                <SiCss3 color={"#264de4"} />
-                &nbsp;CSS3
-              </Description>
-              <Description>
-                <DiDatabase color={"#F29111"} />
-                &nbsp;MySQL
-              </Description>
-              <Description>
-                <SiGraphql color={"#e535ab"} />
-                &nbsp;GraphQL
-              </Description>
-              <Description>
-                <SiKubernetes color={"#3970e4"} />
-                &nbsp;Kubernetes
-              </Description>
-            </Skills>
-          </SkillsContainer>
-          <Description>
-            Main skills that I improved during my career:
-          </Description>
-          <SkillsContainer>
-            <Skills>
-              <Description>&#x27A4;&nbsp; Self Learning</Description>
-              <Description>&#x27A4;&nbsp; Problem Solving</Description>
-              <Description>&#x27A4;&nbsp; Organization</Description>
-            </Skills>
-            <Skills>
-              <Description>&#x27A4;&nbsp; Time Management</Description>
-              <Description>&#x27A4;&nbsp; Teamwork</Description>
-              <Description>&#x27A4;&nbsp; Leadership</Description>
-            </Skills>
-          </SkillsContainer>
-          <ButtonCV
-            href="https://drive.google.com/file/d/1ppSTvGuXBSG6AS8-NDX0_WiWTefrpyPW/view?usp=sharing"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Download Resume
-          </ButtonCV>
-        </TextContainer>
-      </Content>
-    </AboutContainer>
+    <section id="about" className="color text-light">
+      <div className="container about-container">
+        <h2 className="text-warning title">About</h2>
+        <div className="content-container">
+          <div className="image-container">
+            <img src={Profile} className="rounded-circle image" alt="Profile" />
+          </div>
+          <div className="text-container">
+            <h3 className="text-warning subtitle">Hello! I'm Lucas.</h3>
+            <p className="description-start">
+              I am a Calgary-based Front-End Developer. I had worked as an
+              engineer for almost four years. During my career, I developed
+              various skills like strong organization, teamwork, time
+              management, and problem-solving.
+            </p>
+            <p className="description-start">
+              I discovered my passion for programming when I started to do some
+              Front-End courses about HTML, CSS, and JavaScript. After that, I
+              never stopped. Now I am focused on improving my knowledge in React
+              to boost my projects exploring new technologies.
+            </p>
+            <h3 className="text-warning subtitle">Why hire me?</h3>
+            <p className="description-center">
+              I'm able to work with the following technologies:
+            </p>
+            <div className="skills-container">
+              <div className="skills-column-container">
+                <p>
+                  <SiJavascript color={"#f0db4f"} />
+                  &nbsp;JavaScript
+                </p>
+                <p>
+                  <FaReact color={"#61dbfb"} />
+                  &nbsp;React and React Native
+                </p>
+                <p>
+                  <FaNodeJs color={"#68a063"} />
+                  &nbsp;NodeJs
+                </p>
+                <p>
+                  <SiGithub color={"white"} />
+                  &nbsp;GitHub
+                </p>
+                <p>
+                  <FaDocker color={"#0db7ed"} />
+                  &nbsp;Docker
+                </p>
+              </div>
+              <div className="skills-column-container">
+                <p>
+                  <SiHtml5 color={"#e34c26"} />
+                  &nbsp;HTML5
+                </p>
+                <p>
+                  <SiCss3 color={"#264de4"} />
+                  &nbsp;CSS3
+                </p>
+                <p>
+                  <DiDatabase color={"#F29111"} />
+                  &nbsp;MySQL
+                </p>
+                <p>
+                  <SiGraphql color={"#e535ab"} />
+                  &nbsp;GraphQL
+                </p>
+                <p>
+                  <SiKubernetes color={"#3970e4"} />
+                  &nbsp;Kubernetes
+                </p>
+              </div>
+            </div>
+            <p className="description-center">
+              Main skills that I improved during my career:
+            </p>
+            <div className="skills-container">
+              <div className="skills-column-container">
+                <p>&#x27A4;&nbsp; Self Learning</p>
+                <p>&#x27A4;&nbsp; Problem Solving</p>
+                <p>&#x27A4;&nbsp; Organization</p>
+              </div>
+              <div className="skills-column-container">
+                <p>&#x27A4;&nbsp; Time Management</p>
+                <p>&#x27A4;&nbsp; Teamwork</p>
+                <p>&#x27A4;&nbsp; Leadership</p>
+              </div>
+            </div>
+            <a
+              href="https://drive.google.com/file/d/1ppSTvGuXBSG6AS8-NDX0_WiWTefrpyPW/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+              className="btn btn-dark button-resume"
+            >
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };

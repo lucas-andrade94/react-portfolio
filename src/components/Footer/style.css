@@ -1,0 +1,13 @@
+.color {
+  background: #1a5276;
+}
+
+.footer-container {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+}
+
+.link-name {
+  text-decoration: none;
+}

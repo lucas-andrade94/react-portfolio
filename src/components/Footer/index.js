@@ -1,13 +1,21 @@
 import React from "react";
 
-import { FooterContainer } from "./style";
-import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import "./style.css";
 
 export const Footer = () => {
   return (
-    <FooterContainer>
-      Developed by me&nbsp;
-      <EmojiEmotionsIcon sx={{ color: "#ffcc33" }} />
-    </FooterContainer>
+    <section className="color text-light">
+      <div className="container footer-container">
+        Developed by{" "}
+        <a
+          href="https://www.linkedin.com/in/lucas-silva-de-andrade/"
+          target="_blank"
+          rel="noreferrer"
+          className="link-name text-warning"
+        >
+          Lucas Andrade
+        </a>
+      </div>
+    </section>
   );
 };

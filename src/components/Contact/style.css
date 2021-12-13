@@ -1,0 +1,36 @@
+.color {
+  background: #1a5276;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.social {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem 0;
+}
+
+.social-links {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@media (min-width: 0px) and (max-width: 575px) {
+  .social {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}

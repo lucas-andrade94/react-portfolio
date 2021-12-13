@@ -1,0 +1,29 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.phrases-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.content {
+  font-size: 1.5rem;
+}
+
+.name {
+  font-size: 2rem;
+}
+
+.icones-container {
+  margin-top: 2rem;
+}
+
+.icones {
+  padding: 0 0.5rem 0 0.5rem;
+}

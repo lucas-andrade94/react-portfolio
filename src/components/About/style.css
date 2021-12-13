@@ -1,0 +1,127 @@
+.color {
+  background: #1a5276;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.subtitle {
+  font-size: 1.75rem;
+  font-weight: bold;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.image-container {
+  display: flex;
+  padding: 0 1rem;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0 1rem;
+  width: 65%;
+}
+
+.image {
+  height: 600px;
+  width: auto;
+}
+
+.description-start {
+  text-align: start;
+}
+
+.description-center {
+  text-align: center;
+}
+
+.skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.skills-column-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.button-resume {
+  width: 30%;
+  margin: 1rem auto;
+}
+
+@media (min-width: 0px) and (max-width: 992px) {
+  .content-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image-container {
+    width: 100%;
+  }
+
+  .text-container {
+    width: 100%;
+  }
+
+  .button-resume {
+    width: 70%;
+  }
+}
+
+@media (min-width: 0px) and (max-width: 768px) {
+  .image {
+    display: flex;
+    height: 300px;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .image {
+    display: flex;
+    height: 450px;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .image {
+    display: flex;
+    height: 450px;
+    padding: 1rem 0;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .button-resume {
+    width: 35%;
+  }
+}
