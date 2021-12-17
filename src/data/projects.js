@@ -6,6 +6,7 @@ import FrontendBootcampGif from "../assets/FrontendBootcamp.webp";
 import MealsToGoGif from "../assets/MealsToGo.webp";
 import FocusTimeGif from "../assets/FocusTime.webp";
 import GatitoGif from "../assets/Gatito.webp";
+import ToDoListGif from "../assets/ToDoList.webp";
 
 export const projectsWeb = [
   {
@@ -34,6 +35,16 @@ export const projectsWeb = [
       "Stacks used: React, CSS, Material-UI and API from EmailJS.",
     githubLink: "https://github.com/lucas-andrade94/Target-Agrimensura-Website",
     projectLink: "https://target-agrimensura.netlify.app/",
+  },
+  {
+    title: "To Do List",
+    image: ToDoListGif,
+    descriptionApp: "To Do List to remember tasks.",
+    descriptionStacks: "Stacks used: React and TypeScript.",
+    githubLink:
+      "https://github.com/lucas-andrade94/react_typescript-to-do-list",
+    projectLink:
+      "https://react-typescript-to-do-list-lucas-andrade94.vercel.app/",
   },
   {
     title: "Frontend Bootcamp",
