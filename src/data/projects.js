@@ -7,6 +7,7 @@ import MealsToGoGif from "../assets/MealsToGo.webp";
 import FocusTimeGif from "../assets/FocusTime.webp";
 import GatitoGif from "../assets/Gatito.webp";
 import ToDoListGif from "../assets/ToDoList.webp";
+import FinancialSummaryGif from "../assets/FinancialSummary.webp";
 
 export const projectsWeb = [
   {
@@ -45,6 +46,15 @@ export const projectsWeb = [
       "https://github.com/lucas-andrade94/react_typescript-to-do-list",
     projectLink:
       "https://react-typescript-to-do-list-lucas-andrade94.vercel.app/",
+  },
+  {
+    title: "Financial Summary",
+    image: FinancialSummaryGif,
+    descriptionApp: "Financial Summary to control your finances.",
+    descriptionStacks: "Stacks used: React and TypeScript.",
+    githubLink:
+      "https://github.com/lucas-andrade94/react_typescript-financial-summary",
+    projectLink: "https://react-typescript-financial-summary.vercel.app/",
   },
   {
     title: "Frontend Bootcamp",
