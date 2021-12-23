@@ -8,6 +8,7 @@ import FocusTimeGif from "../assets/FocusTime.webp";
 import GatitoGif from "../assets/Gatito.webp";
 import ToDoListGif from "../assets/ToDoList.webp";
 import FinancialSummaryGif from "../assets/FinancialSummary.webp";
+import TwitterCloneGif from "../assets/TwitterClone.webp";
 
 export const projectsWeb = [
   {
@@ -18,6 +19,15 @@ export const projectsWeb = [
       "Stacks used: React, Redux, Node.js, Express, Passport, MongoDB, Stripe, and SendGrid.",
     githubLink: "https://github.com/lucas-andrade94/node_react-emaily",
     projectLink: "https://radiant-brushlands-87677.herokuapp.com/",
+  },
+  {
+    title: "Twitter Clone",
+    image: TwitterCloneGif,
+    descriptionApp: "Simulates Twitter website.",
+    descriptionStacks:
+      "Stacks used: NextJS, Tailwind, Firebase, NextAuth, and Recoil.js.",
+    githubLink: "https://github.com/lucas-andrade94/nextJS-twitter-clone",
+    projectLink: "https://next-js-twitter-clone-seven.vercel.app/",
   },
   {
     title: "CRWN Clothing",
