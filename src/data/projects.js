@@ -9,6 +9,7 @@ import GatitoGif from "../assets/Gatito.webp";
 import ToDoListGif from "../assets/ToDoList.webp";
 import FinancialSummaryGif from "../assets/FinancialSummary.webp";
 import TwitterCloneGif from "../assets/TwitterClone.webp";
+import SpotifyCloneGif from "../assets/SpotifyClone.webp";
 
 export const projectsWeb = [
   {
@@ -25,9 +26,18 @@ export const projectsWeb = [
     image: TwitterCloneGif,
     descriptionApp: "Simulates Twitter website.",
     descriptionStacks:
-      "Stacks used: NextJS, Tailwind, Firebase, NextAuth, and Recoil.js.",
+      "Stacks used: NextJS, Tailwind CSS, Spotify API, NextAuth, and Recoil.js.",
     githubLink: "https://github.com/lucas-andrade94/nextJS-twitter-clone",
     projectLink: "https://next-js-twitter-clone-seven.vercel.app/",
+  },
+  {
+    title: "Spotify Clone",
+    image: SpotifyCloneGif,
+    descriptionApp: "Simulates Spotify web player.",
+    descriptionStacks:
+      "Stacks used: NextJS, Tailwind CSS, Firebase, NextAuth, and Recoil.js.",
+    githubLink: "https://github.com/lucas-andrade94/nextJS-spotify-clone",
+    projectLink: "https://next-js-spotify-clone-ochre.vercel.app/",
   },
   {
     title: "CRWN Clothing",

@@ -11,7 +11,9 @@ import { DiDatabase } from "@react-icons/all-files/di/DiDatabase";
 import { FaNodeJs } from "@react-icons/all-files/fa/FaNodeJs";
 import { SiGraphql } from "@react-icons/all-files/si/SiGraphql";
 import { FaDocker } from "@react-icons/all-files/fa/FaDocker";
-import { SiKubernetes } from "@react-icons/all-files/si/SiKubernetes";
+import { SiBootstrap } from "@react-icons/all-files/si/SiBootstrap";
+import { SiNextDotJs } from "@react-icons/all-files/si/SiNextDotJs";
+import { SiTailwindcss } from "@react-icons/all-files/si/SiTailwindcss";
 
 export const About = () => {
   return (
@@ -55,6 +57,10 @@ export const About = () => {
                   &nbsp;NodeJs
                 </p>
                 <p>
+                  <SiNextDotJs color={"#ffffff"} />
+                  &nbsp;Next.js
+                </p>
+                <p>
                   <SiGithub color={"white"} />
                   &nbsp;GitHub
                 </p>
@@ -73,16 +79,20 @@ export const About = () => {
                   &nbsp;CSS3
                 </p>
                 <p>
+                  <SiBootstrap color={"#44048c"} />
+                  &nbsp;Bootstrap
+                </p>
+                <p>
+                  <SiTailwindcss color={"#3490dc"} />
+                  &nbsp;Tailwind CSS
+                </p>
+                <p>
                   <DiDatabase color={"#F29111"} />
                   &nbsp;MySQL
                 </p>
                 <p>
                   <SiGraphql color={"#e535ab"} />
                   &nbsp;GraphQL
-                </p>
-                <p>
-                  <SiKubernetes color={"#3970e4"} />
-                  &nbsp;Kubernetes
                 </p>
               </div>
             </div>
