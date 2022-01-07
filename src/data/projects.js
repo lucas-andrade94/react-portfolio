@@ -17,8 +17,8 @@ export const projectsWeb = [
     image: NetflixCloneGif,
     descriptionApp: "Simulates the Netflix Website using a movie database.",
     descriptionStacks: "Stacks used: React, CSS and API from The Movie DB.",
-    githubLink: "https://github.com/lucas-andrade94/Netflix-WebsiteClone",
-    projectLink: "https://netflix-clone-lucas-andrade.netlify.app/",
+    githubLink: "https://github.com/lucas-andrade94/react-netflix-clone",
+    projectLink: "https://react-netflix-clone-delta.vercel.app/",
   },
   {
     title: "Emaily",
