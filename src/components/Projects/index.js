@@ -1,97 +1,53 @@
 import React from "react";
-import { Carousel } from "react-bootstrap";
 
 import "./style.css";
 import { projectsWeb, projectsMobile } from "../../data/projects";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from "@mui/icons-material/Language";
 
 export const Projects = () => {
   const renderProjectsWeb = () => {
-    return projectsWeb.map(
-      ({
-        title,
-        image,
-        descriptionApp,
-        descriptionStacks,
-        githubLink,
-        projectLink,
-      }) => {
-        return (
-          <Carousel.Item interval={7500} key={title}>
-            <img
-              className="d-block carousel-item-image"
-              src={image}
-              alt={title}
-            />
-            <Carousel.Caption>
-              <h3 className="text-dark subtitle-project carousel-background title-mobile">
-                {title}
-              </h3>
-              <p className="text-dark description carousel-background mobile-view">
-                {descriptionApp}
-              </p>
-              <p className="text-dark description carousel-background mobile-view">
-                {descriptionStacks}
-              </p>
-              <div className="container-button">
-                <a
-                  href={githubLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary button-links"
-                >
-                  Code
-                </a>
-                <a
-                  href={projectLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary button-links"
-                >
-                  Project
-                </a>
-              </div>
-            </Carousel.Caption>
-          </Carousel.Item>
-        );
-      }
-    );
+    return projectsWeb.map(({ title, image, githubLink, projectLink }) => {
+      return (
+        <div className="projects-container-portfolio-item">
+          <h3 className="subtitle-project text-warning">{title}</h3>
+          <img className="image-project-web" src={image} alt={title} />
+          <div className="project-links">
+            <a href={githubLink} target="_blank" rel="noreferrer">
+              <GitHubIcon
+                className="text-light project-link"
+                sx={{ fontSize: "2rem" }}
+              />
+            </a>
+            <a href={projectLink} target="_blank" rel="noreferrer">
+              <LanguageIcon
+                className="text-light project-link"
+                sx={{ fontSize: "2rem" }}
+              />
+            </a>
+          </div>
+        </div>
+      );
+    });
   };
 
   const renderProjectsMobile = () => {
-    return projectsMobile.map(
-      ({ title, image, descriptionApp, descriptionStacks, githubLink }) => {
-        return (
-          <Carousel.Item interval={7500} key={title}>
-            <img
-              className="d-block carousel-item-image-mobile"
-              src={image}
-              alt={title}
-            />
-            <Carousel.Caption>
-              <h3 className="text-dark subtitle-project  carousel-background">
-                {title}
-              </h3>
-              <p className="text-dark description carousel-background mobile-view">
-                {descriptionApp}
-              </p>
-              <p className="text-dark description carousel-background mobile-view">
-                {descriptionStacks}
-              </p>
-              <div className="container-button">
-                <a
-                  href={githubLink}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="btn btn-primary button-links"
-                >
-                  Code
-                </a>
-              </div>
-            </Carousel.Caption>
-          </Carousel.Item>
-        );
-      }
-    );
+    return projectsMobile.map(({ title, image, githubLink }) => {
+      return (
+        <div className="projects-container-portfolio-item">
+          <h3 className="subtitle-project text-warning">{title}</h3>
+          <img className="image-project-mobile" src={image} alt={title} />
+          <div className="project-links">
+            <a href={githubLink} target="_blank" rel="noreferrer">
+              <GitHubIcon
+                className="text-light project-link"
+                sx={{ fontSize: "2rem" }}
+              />
+            </a>
+          </div>
+        </div>
+      );
+    });
   };
 
   return (
@@ -99,17 +55,13 @@ export const Projects = () => {
       <div className="container projects-container">
         <h2 className="text-warning title">Projects</h2>
         <h3 className="text-warning subtitle">Websites</h3>
-        <Carousel fade={true} variant="dark" className="carousel-container">
+        <div className="projects-container-portfolio-web">
           {renderProjectsWeb()}
-        </Carousel>
+        </div>
         <h3 className="text-warning subtitle">Mobile Applications</h3>
-        <Carousel
-          fade={true}
-          variant="dark"
-          className="carousel-container-mobile"
-        >
+        <div className="projects-container-portfolio-mobile">
           {renderProjectsMobile()}
-        </Carousel>
+        </div>
       </div>
     </section>
   );

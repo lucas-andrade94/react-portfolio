@@ -18,6 +18,16 @@
   padding: 1rem 0;
 }
 
+.projects-container-portfolio-web {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.projects-container-portfolio-mobile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
 .subtitle-project {
   font-size: 1.25rem;
   font-weight: bold;
@@ -25,101 +35,86 @@
   padding: 0.25rem 0;
 }
 
-.carousel-container {
+.projects-container-portfolio-item {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 480px;
+  flex-direction: column;
+  margin: 1rem;
 }
 
-.carousel-item-image {
-  height: 480px;
+.project-links {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0;
+}
+
+.project-link {
+  margin: 0 1rem;
+}
+
+.image-project-web {
+  height: 200px;
   width: auto;
 }
 
-.carousel-container-mobile {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 480px;
-}
-
-.carousel-item-image-mobile {
-  height: 480px;
+.image-project-mobile {
+  height: 400px;
   width: auto;
-}
-
-.carousel-background {
-  background-color: rgba(255, 255, 255, 0.6);
-}
-
-.description {
-  font-weight: bold;
-}
-
-.container-button {
-  display: flex;
-  justify-content: center;
-}
-
-.button-links {
-  margin: 0 0.5rem;
 }
 
 @media (min-width: 0px) and (max-width: 575px) {
-  .carousel-container {
-    height: 200px;
+  .projects-container-portfolio-web {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .carousel-item-image {
-    height: 200px;
+  .projects-container-portfolio-mobile {
+    display: grid;
+    grid-template-columns: 1fr;
   }
 
-  .carousel-container-mobile {
-    height: 300px;
+  .image-project-web {
+    height: 150px;
+    width: auto;
   }
 
-  .carousel-item-image-mobile {
-    height: 300px;
-  }
-
-  .mobile-view {
-    display: none;
+  .image-project-mobile {
+    height: 350px;
+    width: auto;
   }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-  .carousel-container {
+  .projects-container-portfolio-web {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image-project-web {
+    height: 130px;
+    width: auto;
+  }
+
+  .image-project-mobile {
     height: 300px;
-  }
-
-  .carousel-item-image {
-    height: 300px;
-  }
-
-  .carousel-container-mobile {
-    height: 400px;
-  }
-
-  .carousel-item-image-mobile {
-    height: 400px;
-  }
-
-  .description {
-    font-size: 0.75rem;
+    width: auto;
   }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .carousel-container {
-    height: 420px;
+  .projects-container-portfolio-web {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 
-  .carousel-item-image {
-    height: 420px;
+  .image-project-web {
+    height: 150px;
+    width: auto;
   }
 
-  .description {
-    font-size: 0.9rem;
+  .image-project-mobile {
+    height: 350px;
+    width: auto;
   }
 }
