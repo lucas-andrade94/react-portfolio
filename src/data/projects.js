@@ -13,6 +13,14 @@ import SpotifyCloneGif from "../assets/SpotifyClone.webp";
 
 export const projectsWeb = [
   {
+    title: "Netflix Clone",
+    image: NetflixCloneGif,
+    descriptionApp: "Simulates the Netflix Website using a movie database.",
+    descriptionStacks: "Stacks used: React, CSS and API from The Movie DB.",
+    githubLink: "https://github.com/lucas-andrade94/Netflix-WebsiteClone",
+    projectLink: "https://netflix-clone-lucas-andrade.netlify.app/",
+  },
+  {
     title: "Emaily",
     image: EmailyGif,
     descriptionApp: "Email feedback platform",
@@ -84,14 +92,6 @@ export const projectsWeb = [
     githubLink: "https://github.com/lucas-andrade94/bootstrap-webpage",
     projectLink:
       "https://lucas-andrade94.github.io/bootstrap-webpage/#instructors",
-  },
-  {
-    title: "Netflix Clone",
-    image: NetflixCloneGif,
-    descriptionApp: "Simulates the Netflix Website using a movie database.",
-    descriptionStacks: "Stacks used: React, CSS and API from The Movie DB.",
-    githubLink: "https://github.com/lucas-andrade94/Netflix-WebsiteClone",
-    projectLink: "https://netflix-clone-lucas-andrade.netlify.app/",
   },
 ];
 
