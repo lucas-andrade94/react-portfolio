@@ -3,7 +3,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem 0;
+  padding-bottom: 1rem;
+  padding-top: 56px;
 }
 
 .title {

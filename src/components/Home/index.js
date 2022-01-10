@@ -1,5 +1,6 @@
 import React from "react";
 import Typed from "react-typed";
+import ParticlesBg from "particles-bg";
 
 import "./style.css";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -32,7 +33,7 @@ export const Home = () => {
   let greeting = greetingTime(nowNumber);
 
   return (
-    <section id="home" className="bg-dark text-light">
+    <section id="home" className="text-light">
       <div className="container home-container">
         <div>
           <div className="phrases-container">
@@ -86,6 +87,7 @@ export const Home = () => {
           </div>
         </div>
       </div>
+      <ParticlesBg type="lines" bg={true} />
     </section>
   );
 };

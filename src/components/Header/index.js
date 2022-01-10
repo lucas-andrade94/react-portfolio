@@ -1,11 +1,32 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Container, Navbar, Nav } from "react-bootstrap";
 
 import "./style.css";
 
 export const Header = () => {
+  const [show, setShow] = useState(false);
+
+  const transitionHeader = () => {
+    if (window.scrollY > 450) {
+      setShow(true);
+    } else {
+      setShow(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", transitionHeader);
+    return () => window.removeEventListener("scroll", transitionHeader);
+  }, []);
+
   return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" fixed="top">
+    <Navbar
+      collapseOnSelect
+      expand="lg"
+      bg={`${show ? "dark" : ""}`}
+      variant="dark"
+      fixed="top"
+    >
       <Container className="d-flex align-items-center justify-content-between">
         <Navbar.Brand href="#home" className="fw-bold">
           Lucas Andrade
