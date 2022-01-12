@@ -76,14 +76,12 @@ export const projectsWeb = [
     projectLink: "https://target-agrimensura.netlify.app/",
   },
   {
-    title: "To Do List",
+    title: "To Do App",
     image: ToDoListGif,
-    descriptionApp: "To Do List to remember tasks.",
-    descriptionStacks: "Stacks used: React and TypeScript.",
-    githubLink:
-      "https://github.com/lucas-andrade94/react_typescript-to-do-list",
-    projectLink:
-      "https://react-typescript-to-do-list-lucas-andrade94.vercel.app/",
+    descriptionApp: "To Do App to remember tasks.",
+    descriptionStacks: "Stacks used: React and CSS.",
+    githubLink: "https://github.com/lucas-andrade94/react-todo-app",
+    projectLink: "https://react-todo-app-chi-ten.vercel.app/",
   },
   {
     title: "Financial Summary",
