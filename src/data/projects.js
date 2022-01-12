@@ -10,6 +10,7 @@ import ToDoListGif from "../assets/ToDoList.webp";
 import FinancialSummaryGif from "../assets/FinancialSummary.webp";
 import TwitterCloneGif from "../assets/TwitterClone.webp";
 import SpotifyCloneGif from "../assets/SpotifyClone.webp";
+import MetaverseLiveChat from "../assets/MetaverseLiveChat.webp";
 
 export const projectsWeb = [
   {
@@ -21,13 +22,13 @@ export const projectsWeb = [
     projectLink: "https://react-netflix-clone-delta.vercel.app/",
   },
   {
-    title: "Emaily",
-    image: EmailyGif,
-    descriptionApp: "Email feedback platform",
-    descriptionStacks:
-      "Stacks used: React, Redux, Node.js, Express, Passport, MongoDB, Stripe, and SendGrid.",
-    githubLink: "https://github.com/lucas-andrade94/node_react-emaily",
-    projectLink: "https://radiant-brushlands-87677.herokuapp.com/",
+    title: "Metaverse Live Chat",
+    image: MetaverseLiveChat,
+    descriptionApp:
+      "Metaverse Live Chat is a web application of chat between users.",
+    descriptionStacks: "Stacks used: NextJS, Tailwind CSS, and Moralis.",
+    githubLink: "https://github.com/lucas-andrade94/nextJS-live-chat",
+    projectLink: "https://next-js-live-chat.vercel.app/",
   },
   {
     title: "Twitter Clone",
@@ -37,6 +38,15 @@ export const projectsWeb = [
       "Stacks used: NextJS, Tailwind CSS, Spotify API, NextAuth, and Recoil.js.",
     githubLink: "https://github.com/lucas-andrade94/nextJS-twitter-clone",
     projectLink: "https://next-js-twitter-clone-seven.vercel.app/",
+  },
+  {
+    title: "Emaily",
+    image: EmailyGif,
+    descriptionApp: "Email feedback platform",
+    descriptionStacks:
+      "Stacks used: React, Redux, Node.js, Express, Passport, MongoDB, Stripe, and SendGrid.",
+    githubLink: "https://github.com/lucas-andrade94/node_react-emaily",
+    projectLink: "https://radiant-brushlands-87677.herokuapp.com/",
   },
   {
     title: "Spotify Clone",
