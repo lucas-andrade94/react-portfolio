@@ -11,6 +11,8 @@ import FinancialSummaryGif from "../assets/FinancialSummary.webp";
 import TwitterCloneGif from "../assets/TwitterClone.webp";
 import SpotifyCloneGif from "../assets/SpotifyClone.webp";
 import MetaverseLiveChat from "../assets/MetaverseLiveChat.webp";
+import SignalCloneGif from "../assets/SignalClone.webp";
+import JokesGif from "../assets/Jokes.webp";
 
 export const projectsWeb = [
   {
@@ -119,6 +121,23 @@ export const projectsMobile = [
     descriptionApp: "Focus Time is a Pomodoro app for Android and iOS.",
     descriptionStacks: "Stacks used: React Native and Expo.",
     githubLink: "https://github.com/lucas-andrade94/react-native-focus-time",
+  },
+  {
+    title: "Signal Clone",
+    image: SignalCloneGif,
+    descriptionApp: "Simulates Signal app.",
+    descriptionStacks:
+      "Stacks used: React Native, Expo, React Navigation and Firebase.",
+    githubLink: "https://github.com/lucas-andrade94/react-native-signal-clone",
+  },
+  {
+    title: "Jokes",
+    image: JokesGif,
+    descriptionApp: "Jokes is a application that shows you a random joke.",
+    descriptionStacks:
+      "Stacks used: React Native, Expo, React Navigation, Recoil, Axios and JokeAPI.",
+    githubLink:
+      "https://github.com/lucas-andrade94/react-native-coding-test-Nook",
   },
   {
     title: "Gatito",

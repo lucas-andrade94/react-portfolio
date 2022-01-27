@@ -126,6 +126,11 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .projects-container-portfolio-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   .image-project-web {
     height: 150px;
     width: auto;
@@ -136,5 +141,10 @@
   .projects-container-portfolio-web {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .projects-container-portfolio-mobile {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
