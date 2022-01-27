@@ -26,7 +26,7 @@
 
 .projects-container-portfolio-mobile {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .subtitle-project {
@@ -141,10 +141,5 @@
   .projects-container-portfolio-web {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .projects-container-portfolio-mobile {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   }
 }
