@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lucas Andrade · Software Engineer</title>
+    <meta
+      name="description"
+      content="Lucas Andrade is a software engineer in Calgary building web and mobile products with React Native, React, Node and TypeScript."
+    />
+    <meta property="og:title" content="Lucas Andrade · Software Engineer" />
+    <meta
+      property="og:description"
+      content="Software engineer at Bloks building product features, CRM integrations and platform tooling."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lucas-andrade.com/" />
+    <meta name="theme-color" content="#0b0d10" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#fafaf9" media="(prefers-color-scheme: light)" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@400..700&family=Geist+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      // Apply the theme before first paint to avoid a flash.
+      try {
+        var t = localStorage.getItem("theme");
+        if (t === "dark" || (!t && matchMedia("(prefers-color-scheme: dark)").matches))
+          document.documentElement.classList.add("dark");
+      } catch (e) {}
+    </script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to view this site.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/index.jsx"></script>
+  </body>
+</html>
