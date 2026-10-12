@@ -1,11 +1,130 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap");
+@import "tailwindcss";
 
-header,
-body,
-footer {
-  font-family: "Montserrat", sans-serif;
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: "Geist", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-line: var(--line);
+  --color-fg: var(--fg);
+  --color-muted: var(--muted);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+}
+
+:root {
+  --bg: #fafaf9;
+  --surface: #ffffff;
+  --line: #e7e5e4;
+  --fg: #1c1917;
+  --muted: #57534e;
+  --accent: #0f766e;
+  --accent-soft: rgba(15, 118, 110, 0.08);
+  --spot: rgba(15, 118, 110, 0.06);
+  color-scheme: light;
+}
+
+.dark {
+  --bg: #0b0d10;
+  --surface: #11151a;
+  --line: #1f252d;
+  --fg: #e7e9ec;
+  --muted: #8d96a3;
+  --accent: #5eead4;
+  --accent-soft: rgba(94, 234, 212, 0.08);
+  --spot: rgba(94, 234, 212, 0.05);
+  color-scheme: dark;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--bg);
+}
+
+.spotlight {
+  background: radial-gradient(
+    600px circle at var(--x, -100vw) var(--y, -100vh),
+    var(--spot),
+    transparent 80%
+  );
+}
+
+[data-reveal] {
+  opacity: 0;
+  filter: blur(6px);
+  transform: translateY(12px);
+  transition:
+    opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.7s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+[data-reveal].is-visible {
+  opacity: 1;
+  filter: none;
+  transform: none;
+}
+
+.blur-in {
+  animation: blur-in 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--i, 0) * 80ms);
+}
+
+@keyframes blur-in {
+  from {
+    opacity: 0;
+    filter: blur(8px);
+    transform: translateY(8px);
+  }
+}
+
+/* Focus cards: dim the siblings of the hovered card. */
+@media (hover: hover) and (min-width: 1024px) {
+  .focus-list > li {
+    transition: opacity 0.3s;
+  }
+  .focus-list:hover > li:not(:hover) {
+    opacity: 0.5;
+  }
+}
+
+.pop {
+  animation: pop 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.5) rotate(-20deg);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  [data-reveal] {
+    opacity: 1;
+    filter: none;
+    transform: none;
+    transition: none;
+  }
+  .blur-in,
+  .pop {
+    animation: none;
+  }
 }
